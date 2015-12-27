@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return 'Merbot '.. VERSION .. [[ 
+  return 'TeleSwwit '.. VERSION .. [[ 
   Checkout http://git.io/v4Oi0
   GNU GPL v2 license.]]
 end
