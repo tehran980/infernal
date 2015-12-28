@@ -147,7 +147,7 @@ local function run(msg, matches)
       end
     end
 
-    if matches[2] == "teleswwit" then
+    if matches[2] == "telesweet" then
       if not is_sudo(msg) then
         return "Bot stats requires privileged user"
       else
@@ -170,12 +170,12 @@ return {
   usage = {
     "!stats: Returns a list of Username [telegram_id]: msg_num",
     "!stats chat <chat_id>: Show stats for chat_id",
-    "!stats bot: Shows bot stats (sudo users)"
+    "!stats telesweet : Shows bot stats (sudo users)"
   },
   patterns = {
     "^!([Ss]tats)$",
     "^!([Ss]tats) (chat) (%d+)",
-    "^!([Ss]tats) (teleswwit)"
+    "^!([Ss]tats) (telesweet)"
     }, 
   run = run,
   pre_process = pre_process
