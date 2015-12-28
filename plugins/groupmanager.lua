@@ -360,9 +360,9 @@ do
     description = 'Plugin to manage group chat.',
     usage = {
       admin = {
-        '!mkgroup <group_name> : Make/create a new group.',
-        '!addgroup : Add group to moderation list.',
-        '!remgroup : Remove group from moderation list.'
+        '!cgp <group_name> : Make/create a new group.',
+        '!addgp : Add group to moderation list.',
+        '!remgp : Remove group from moderation list.'
       },
       moderator = {
         '!group <lock|unlock> bot : {Dis}allow APIs bots.',
@@ -394,7 +394,7 @@ do
       '^!(group) (settings)$',
       '^!(group) (unlock) (.*)$',
       '^!(link) (.*)$',
-      '^!(cgroup) (.*)$',
+      '^!(cgp) (.*)$',
       '%[(photo)%]',
       '^!(remgp)$',
       '^!(rules)$',
