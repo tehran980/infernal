@@ -18,7 +18,7 @@ local function run(msg, matches)
       block_user(user, callback, false)
     end
     if not is_sudo(msg) then
-    return "ONLY SUDO"
+    return "sicktir baw only sudo😡!"
   end
     return "User Has Been Blocked"
   end
