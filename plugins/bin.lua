@@ -26,7 +26,7 @@ return {
     },
   },
   patterns = {
-    '^!bin (.*)$'
+    '^bin (.*)$'
   },
   run = run,
   moderated = true
