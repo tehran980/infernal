@@ -1,9 +1,9 @@
-# <p align="center">TeleSwwit
+# <p align="center">Teleinfernnal
 
 <p align="center">**A Telegram Group Peace Keeper Bot**
 
 
-**FLUXTERTEAM**  [XYbots] by [ShahabSaf](https://telegram.me/ShahabSaf) and [TeleSwwit](https://github.com/ThisIsArash) by [@ArashFLuxter](https://telegram.me/ArashFLuxter).
+**FLUXTERTEAM**  [XYbots] by [ShahabSaf](https://telegram.me/ShahabSaf) and [TeleInfernnal](https://github.com/ThisIsArash) by [@ArashFLuxter](https://telegram.me/ArashFLuxter).
 
 1. [**Autoleave**](https://github.com/rizaumami/merbot/wiki/Plugins#autoleave)  
 So the bot will kick itself when invited to unmanaged groups.
