@@ -93,7 +93,7 @@ do
         chat_del_user('chat#id'..chat_id, 'user#id'..user_id, ok_cb, false)
       elseif extra.match == 'sicktir' then
         sicktir_user(user_id, chat_id)
-        send_large_msg('chat#id'..chat_id, 'User '..user_id..' banned')
+        send_large_msg('chat#id'..chat_id, 'User '..user_id..' sicktired')
       elseif extra.match == 'superban' then
         glban_user(user_id, chat_id)
         send_large_msg('chat#id'..chat_id, full_name..' ['..user_id..'] globally banned!')
@@ -141,7 +141,7 @@ do
             send_large_msg('chat#id'..chat_id, 'User @'..username..' ['..user_id..'] globally banned!')
           elseif extra.match == 'unsicktir' then
             unsicktir_user(user_id, chat_id)
-            send_large_msg('chat#id'..chat_id, 'User @'..username..' unbanned', ok_cb,  true)
+            send_large_msg('chat#id'..chat_id, 'User @'..username..' unsicktired', ok_cb,  true)
           elseif extra.match == 'glunban' then
             glunban_user(user_id, chat_id)
             send_large_msg('chat#id'..chat_id, 'User @'..username..' ['..user_id..'] globally unbanned!')
@@ -323,11 +323,11 @@ do
               return 'Anti flood and spam protection already enabled.\nOffender will be sicked.'
             end
           if matches[2] == 'sicktir' then
-            if settings.anti_flood ~= 'ban' then
-              settings.anti_flood = 'ban'
+            if settings.anti_flood ~= 'sicktir' then
+              settings.anti_flood = 'sicktir'
               save_data(_config.moderation.data, data)
             end
-              return 'Anti flood and spam protection already enabled.\nOffender will be banned.'
+              return 'Anti flood and spam protection already enabled.\nOffender will be sicktired.'
             end
           if matches[2] == 'disable' then
             if settings.anti_flood == 'no' then
