@@ -53,13 +53,13 @@ do
       local data = load_data(_config.moderation.data)
 
       -- create a group
-      if matches[1] == 'cgp' and matches[2] and is_mod(msg) then
+      if matches[1] == 'makegroup' and matches[2] and is_mod(msg) then
         create_group_chat (msg.from.print_name, matches[2], ok_cb, false)
 	      return 'Group '..string.gsub(matches[2], '_', ' ')..' has been created.'
       -- add a group to be moderated
       elseif matches[1] == 'addgp' and is_admin(msg) then
         if data[tostring(msg.to.id)] then
-          return 'Group is already added.'
+          return 'This Group is already added.'
         end
         -- create data array in moderation.json
         data[tostring(msg.to.id)] = {
@@ -76,15 +76,15 @@ do
             }
           }
         save_data(_config.moderation.data, data)
-        return 'Group has been added.'
+        return 'This Group has been added.'
       -- remove group from moderation
       elseif matches[1] == 'remgp' and is_admin(msg) then
         if not data[tostring(msg.to.id)] then
-          return 'Group is not added.'
+          return 'This Group is not added.'
         end
         data[tostring(msg.to.id)] = nil
         save_data(_config.moderation.data, data)
-        return 'Group has been removed'
+        return 'This Group has been removed'
       end
 
       if msg.media and is_chat_msg(msg) and is_mod(msg) then
@@ -360,7 +360,7 @@ do
     description = 'Plugin to manage group chat.',
     usage = {
       admin = {
-        'cgp <group_name> : Make/create a new group.',
+        'makegroup <group_name> : Make or create a new group.',
         'addgp : Add group to moderation list.',
         'remgp : Remove group from moderation list.'
       },
@@ -394,7 +394,7 @@ do
       '^(group) (settings)$',
       '^(group) (unlock) (.*)$',
       '^(link) (.*)$',
-      '^(cgp) (.*)$',
+      '^(makegroup) (.*)$',
       '%[(photo)%]',
       '^(remgp)$',
       '^(rules)$',
