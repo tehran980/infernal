@@ -1,8 +1,7 @@
 do
 
 function run(msg, matches)
-  return 'Infernal'.. VERSION ..[[
-  'FLUXTER Team Robot v1.3'.. [[ 
+  return 'FLUXTER Team Robot v1.3'.. [[ 
   Website:
   http://FLUXTERTEAM.epage.IR
   Channel: @FLUXTERteam
