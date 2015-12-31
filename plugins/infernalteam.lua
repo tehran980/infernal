@@ -18,11 +18,11 @@ Member : @Minaco
 end
 
 return {
-  description = "Shows bot version", 
-  usage = "version: Shows bot version",
+  description = "Shows infernalteam", 
+  usage = "version: Shows infernalteam",
   patterns = {
-    "^infernalteam$",
-    "^infernal™$",
+    "^!infernalteam$",
+    "^!infernal™$",
     "
   }, 
   run = run 
