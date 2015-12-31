@@ -5,7 +5,7 @@ function run(msg, matches)
 end
 
 return {
-  description = "Says About ArashFluxter", 
+  description = "Says About arashFluxter", 
   usage = "say about ArashFLuxter  ",
   patterns = {
     "^arashFluxter$",
