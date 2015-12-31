@@ -1,7 +1,7 @@
 do
 
 function run(msg, matches)
-  return ''.. [[ 
+  return 'INFERNALTEAM'.. [[ 
   The internasional Security TEAM😱
 INFERNAL™
 〰〰〰〰〰〰〰〰〰〰〰〰
@@ -21,7 +21,8 @@ return {
   description = "Shows bot version", 
   usage = "version: Shows bot version",
   patterns = {
-    "^fluxterteam$"
+    "^infernalteam$",
+    "^infernal™$",
     "
   }, 
   run = run 
