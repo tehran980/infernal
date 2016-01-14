@@ -8,7 +8,7 @@ function run(msg, matches)
   Creator: @tehran98  
   Developer: @tehran98
   Founder: @tehran98 :-D
-  Manager : @Parham_Fluxter [Sudo3]
+  Manager : @FlOwEd
   Admins:
 @FlOwEd
   @tehran98
