@@ -1,21 +1,17 @@
 do
 
 function run(msg, matches)
-  return 'FLUXTER Team Robot v1.3'.. [[ 
-  Website:
-  http://FLUXTERTEAM.epage.IR
-  Channel: @FLUXTERteam
-  Creator: @ArashFluxter [sudo1]
-  Developer: @ArashFluxter
-  Founder:@shahabsaf [Sudo2]
+  return 'MAXBOT Team Robot v1.2'.. [[ 
+  
+ 
+  Channel: @MAXBOTChannel
+  Creator: @tehran98  
+  Developer: @tehran98
+  Founder: @tehran98 :-D
   Manager : @Parham_Fluxter [Sudo3]
-  Admins
-  @mustafaFLux
-  @Creed_is_Dead
-  Powered by:
-  ArashFluxter security. Group
-  http:// soon :D
-  Engineer Arash.m]]
+  Admins:
+@FlOwEd
+  @tehran98
 end
 
 return {
